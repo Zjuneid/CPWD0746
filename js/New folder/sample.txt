@@ -1,0 +1,64 @@
+/* var authors = {
+		 author_1:{	
+			name:"Zee Andrew",
+			email: "zee@gmail.com",
+		},
+				
+		author_2:{		
+			name: "Andi Jones",
+			email: "andi@gmail.com"
+		} 
+				
+};			
+			
+ for(var a in authors){
+	
+	console.log(a, authors[a]);
+} */
+
+var authors = [
+		{
+			name:"Zee",
+			email:"zee@gmail.com"
+		},
+		{
+			name:"Andi",
+			email:"andi@gmail.com"
+		}
+];
+console.log(authors);
+
+
+for(var auth in authors){
+console.log("Authors", authors[auth]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("jquery loaded -");
+
+var handler = function(){
+	console.log("DOM is ready to use");
+	
+	var body =('body');
+	
+	console.log("body Ele" , body);
+};
+
+$().ready(handler);

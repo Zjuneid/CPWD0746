@@ -1,0 +1,41 @@
+$(function() {
+$( "#datepicker" ).datepicker();
+});
+
+$(function deviceDetector(){
+		var currentDevice,Size,device
+	
+		var Size={
+				w:'wide',
+				d:'desktop',
+				p:'portrait',
+				l:'landscape',
+				m:'mobile',
+			
+			
+			if (window.matchMedia("(max-width-380px)").matches){
+				device = Size,m;
+			}else if (window.matchMedia("(max-width-767px)").mathces){
+				device = Size,m;
+			}else if (window.matchMedia("(max-width-1200px)").mathces){
+				device = Size,d;
+			}/* else if (window.matchMedia("(max-width-767px)").mathces){
+				device = Size,m;
+			}else if (window.matchMedia("(max-width-767px)").mathces){
+				device = Size,m; */
+		}
+	
+	 
+		$(window).on('resize load' ,function(){
+			var device = deviceDetector()
+				$body = $('body');
+				
+				$body.attr({
+					'class':function(i,c){
+						return c.replace(/(^|\s)dev-\S+/g,'dev-'+device);
+					}
+					'data-device':device
+				});
+		});
+	
+});

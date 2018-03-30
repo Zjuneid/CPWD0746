@@ -1,0 +1,42 @@
+<html>
+	<head>Forms</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Personl Details</legend>
+					<label for="f-name"> First Name:</label>
+					<input id="f-name"type="text" name="f-name"/>
+					<label for="L-name"> Last Name:</label>
+					<input id="L-name"type="text" name="L-name"/>
+					<label for="nic"> NIC Number</label>
+					<input id="nic"type="text" name="nic"/>
+			</fieldset>
+			<fieldset>
+				<legend>Gender:</legend>
+					<label for="radio-f"> Female</label>
+					<input id="radio-f"type="radio" name="gender" value="female"/>
+					<label for="radio-m"> Male</label>
+					<input id="radio-m"type="radio" name="gender" value="Male"/>
+			</fieldset>
+			<fieldset>
+				<legend>Courses</legend>
+					<label for="course-cpwd"> CPWD</label>
+					<input id="course-cpwd"type="checkbox" value="CPWD">	
+					<label for="course-redhat"> RED HAT</label>
+					<input id="course-redhat"type="checkbox" checked disabled name="courses" value="redhat">	
+			
+			</fieldset>
+			<fieldset>
+				<legend>Login</legend>
+					<label for="username">Username: </label>
+					<input id="username"type="username" name="username"/>
+					<label for="password"> Password: </label>
+					<input id="password" type="password" name="password"/>
+			</fieldset>
+			<fieldset>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Submit"/>
+			</fieldset>
+		</form>
+	</body>
+</html>

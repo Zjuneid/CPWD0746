@@ -1,0 +1,44 @@
+$(function(){
+	console.log("DOM is ready");
+	
+	var $btn1,$body;
+	var $move=$('.move'),
+		$box1=$('.box1');
+		
+	$btn1 = $('.btn-1');
+	$body = $('body');
+	
+		$btn1.bind("click mouseover",function(){
+		$body.css("backgroundColor","skyblue");
+		
+		return false;
+		});
+	
+	$btn1.bind({
+		click:function(){
+			console.log("Clicked");
+		},
+		
+		dbclick:function(){
+			console.log("Double Clicked");
+		},
+		
+		mouseover:function(){
+			console.log("Mouseover");
+		},
+		
+	});
+	
+	 
+	 
+
+		$move.bind("Click", function(){
+			
+			$box1.animate({
+				left:'1000px',
+				width:'500px',
+		
+			});
+
+		});
+});

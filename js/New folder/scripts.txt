@@ -1,0 +1,73 @@
+$(function(){
+	 var $body = $('body'),
+		$selector = $ ('mobile-selector');
+		apiRequest;
+		
+		apiRequest = ""
+		
+		function showMobiledetails(){
+			console.log(data);
+			
+			
+			
+			
+		}
+		
+		$selector.change(function(val){
+			var $this = $(this),
+				$opt,optData;
+				
+			$opt = $this.find('option:selected');
+			optData = $opt.data;
+			
+			showMobiledetails(optData;)
+			
+			console.log("changed",optData);
+		});
+ });
+
+
+/* 
+$(function(){
+	
+var $logo = $('header img');	
+	
+if(Modernizr.svg){
+	$logo.attr('src','img/logo.svg');
+}
+
+var $gallery = $('.images');
+	$body = $('body');
+	
+if(jQuery().cycle){
+			var cycleOptions={
+				slides:"li",
+				timeout:1000,
+				speed:500,
+				};
+			
+			$gallery.cycle(cycleOptions);
+	}
+	
+	$gallery.on('cycle-next',function(event,opts){
+			$gallery.cycle(cycleOptions);
+	})
+	
+	
+	$body.on("click",".btn_prev",function(){
+		$gallery.cycle('prev');
+	})
+	$body.on("click",".btn_next",function(){
+		$gallery.cycle('next');
+	})
+	
+	
+	$.fn.cpwd = function(){
+		console.log("CPWD custom func")
+	} 
+	
+});
+ */
+ 
+ 
+ 
